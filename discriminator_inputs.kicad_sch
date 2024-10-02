@@ -1,0 +1,437 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "35e82989-132c-40a3-a6d1-685c0226fe35")
+	(paper "USLetter")
+	(title_block
+		(title "BeagleV Fire TDC Cape")
+		(date "2024-09-28")
+		(rev "1")
+		(company "MIT SpinQuest DAQ Group")
+		(comment 1 "Noah Paladino")
+	)
+	(lib_symbols
+		(symbol "power:+3.3V"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0) hide
+					(name "+3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 35.56 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ecb1d417-78c5-421d-848d-39f7eff8ec0f")
+	)
+	(wire
+		(pts
+			(xy 35.56 67.31) (xy 35.56 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c2c4105-26ab-4f86-b489-16f0f928c6c1")
+	)
+	(bus
+		(pts
+			(xy 77.47 67.31) (xy 90.17 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "119a8cf8-e26b-4de8-b85b-dc5080685076")
+	)
+	(wire
+		(pts
+			(xy 52.07 67.31) (xy 35.56 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67c21c10-786b-4e1c-ba68-c900a0250025")
+	)
+	(wire
+		(pts
+			(xy 52.07 48.26) (xy 35.56 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84b3ff8d-9e94-4e2a-b4e9-ecd88d43ce62")
+	)
+	(bus
+		(pts
+			(xy 48.26 85.09) (xy 81.28 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a06a3aaf-8947-4646-9657-19c913cc9cae")
+	)
+	(wire
+		(pts
+			(xy 35.56 48.26) (xy 35.56 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b809fcba-eab4-4fdb-8638-e15764610049")
+	)
+	(bus
+		(pts
+			(xy 77.47 48.26) (xy 90.17 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bafb71bb-5ee4-4d04-a0ef-2565f6d30f57")
+	)
+	(label "D[0..31]"
+		(at 48.26 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0155506f-1a58-41ff-bfe3-969510962026")
+	)
+	(label "D[16..31]"
+		(at 90.17 67.31 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bec2bf4f-5573-4c69-9e82-c7ba2fc44e41")
+	)
+	(label "D[0..15]"
+		(at 90.17 48.26 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c5e1f29d-8c8d-4a90-a68d-c6eb0bfd3021")
+	)
+	(hierarchical_label "Data[0..31]"
+		(shape output)
+		(at 81.28 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9a0a9118-b64d-42a7-b1b4-7c5897a6a96b")
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 35.56 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b7ef7710-bc2c-4b78-beba-23edf16eaf72")
+		(property "Reference" "#PWR013"
+			(at 35.56 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 35.9156 29.972 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 33.02 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 33.02 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "46ec9b9f-b00f-43b1-bffb-2b01c4870a08")
+		)
+		(instances
+			(project "LVDS_BeagleFireV"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/364f48e8-4fae-4583-ba29-d05574bcd467"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 52.07 60.96)
+		(size 25.4 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4b595d9f-694d-453f-92ad-3c21bf5e2b4e")
+		(property "Sheetname" "Port B"
+			(at 52.07 60.2484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "lvds_port.kicad_sch"
+			(at 52.07 74.2446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Out[0..15]" output
+			(at 77.47 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a5f9d8ac-098b-46e6-bbb0-053f1bb689b6")
+		)
+		(pin "VCC" input
+			(at 52.07 67.31 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b6f904fd-cc49-409b-892a-c23978410a3c")
+		)
+		(instances
+			(project "LVDS_BeagleVFire_Cape"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/364f48e8-4fae-4583-ba29-d05574bcd467"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 52.07 41.91)
+		(size 25.4 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7867171c-93be-4914-8424-3e580b245aae")
+		(property "Sheetname" "Port A"
+			(at 52.07 41.1984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "lvds_port.kicad_sch"
+			(at 52.07 55.1946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Out[0..15]" output
+			(at 77.47 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "973af785-e400-4dcf-818d-04a1325186aa")
+		)
+		(pin "VCC" input
+			(at 52.07 48.26 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "cc504943-627d-405d-9119-f362b0935d08")
+		)
+		(instances
+			(project "LVDS_BeagleVFire_Cape"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/364f48e8-4fae-4583-ba29-d05574bcd467"
+					(page "2")
+				)
+			)
+		)
+	)
+)
