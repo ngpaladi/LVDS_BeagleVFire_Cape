@@ -123,9 +123,9 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.127,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.00127,
+        "min_copper_edge_clearance": 0.381,
         "min_hole_clearance": 0.0,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
@@ -135,7 +135,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
+        "min_track_width": 0.127,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.4,
         "solder_mask_to_copper_clearance": 0.0,
@@ -186,7 +186,7 @@
       ],
       "track_widths": [
         0.0,
-        0.0
+        0.762
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -477,19 +477,53 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.15,
+        "clearance": 0.3048,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "mlvds",
+        "name": "fan_pwr",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.762,
+        "via_diameter": 0.6,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.12954,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.17526,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "lvds",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.17526,
         "via_diameter": 0.5,
         "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.381,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "nim",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.381,
+        "via_diameter": 0.6,
+        "via_drill": 0.4,
         "wire_width": 6
       }
     ],
@@ -500,8 +534,20 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "mlvds",
+        "netclass": "lvds",
         "pattern": "/Trigger Interface/D*"
+      },
+      {
+        "netclass": "nim",
+        "pattern": "/Trigger Interface/NIM*"
+      },
+      {
+        "netclass": "lvds",
+        "pattern": "/Discriminator Inputs/Port */In*"
+      },
+      {
+        "netclass": "fan_pwr",
+        "pattern": "+5V"
       }
     ]
   },

@@ -10,4 +10,5 @@
   (lib (name "RJHSE508002")(type "KiCad")(uri "${KIPRJMOD}/project_libraries/RJHSE508002/RJHSE508002.kicad_sym")(options "")(descr ""))
   (lib (name "0826-1A1T-23-F")(type "KiCad")(uri "${KIPRJMOD}/project_libraries/0826_1A1T_23_F/0826-1A1T-23-F.kicad_sym")(options "")(descr ""))
   (lib (name "DMN26D0UT_7")(type "KiCad")(uri "${KIPRJMOD}/project_libraries/DMN26D0UT_7/KiCADv6/2024-06-02_03-30-54.kicad_sym")(options "")(descr ""))
+  (lib (name "Kria_Board_Parts")(type "KiCad")(uri "${KIPRJMOD}/project_libraries/Kria_Board_Parts/Kria_Board_Parts.kicad_sym")(options "")(descr ""))
 )

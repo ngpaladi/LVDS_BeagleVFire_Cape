@@ -2,7 +2,7 @@
 %TF.CreationDate,2025-01-31T14:28:37-05:00*%
 %TF.ProjectId,LVDS_BeagleVFire_Cape,4c564453-5f42-4656-9167-6c6556466972,1*%
 %TF.SameCoordinates,Original*%
-%TF.FileFunction,Legend,Bot*%
+%TF.FileFunction,Paste,Bot*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
@@ -11,19 +11,5 @@ G04 Created by KiCad (PCBNEW 8.0.6) date 2025-01-31 14:28:37*
 %LPD*%
 G01*
 G04 APERTURE LIST*
-%ADD10C,0.508000*%
 G04 APERTURE END LIST*
-D10*
-%TO.C,J9*%
-X76531000Y-83767500D02*
-G75*
-G02*
-X75769000Y-83767500I-381000J0D01*
-G01*
-X75769000Y-83767500D02*
-G75*
-G02*
-X76531000Y-83767500I381000J0D01*
-G01*
-%TD*%
 M02*

@@ -6,8 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "BeagleV Fire TDC Cape")
-		(date "2024-09-28")
-		(rev "1")
+		(date "2025-01-31")
+		(rev "2")
 		(company "MIT SpinQuest DAQ Group")
 		(comment 1 "Noah Paladino")
 	)
@@ -134,6 +134,12 @@
 		)
 	)
 	(junction
+		(at 44.45 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "545bf1fc-63cb-43f3-9b14-20b8893453f7")
+	)
+	(junction
 		(at 35.56 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -161,6 +167,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 69.85) (xy 44.45 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "594f7937-4553-4a1e-b6ae-94d211462195")
+	)
+	(wire
+		(pts
 			(xy 52.07 67.31) (xy 35.56 67.31)
 		)
 		(stroke
@@ -168,6 +184,16 @@
 			(type default)
 		)
 		(uuid "67c21c10-786b-4e1c-ba68-c900a0250025")
+	)
+	(wire
+		(pts
+			(xy 44.45 43.18) (xy 44.45 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72695950-bd3a-4ea4-b35d-3729c3115597")
 	)
 	(wire
 		(pts
@@ -209,6 +235,26 @@
 		)
 		(uuid "bafb71bb-5ee4-4d04-a0ef-2565f6d30f57")
 	)
+	(wire
+		(pts
+			(xy 44.45 69.85) (xy 44.45 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d389587c-6ed6-4194-bbbe-ac3fb6d0a78e")
+	)
+	(wire
+		(pts
+			(xy 44.45 50.8) (xy 52.07 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eecad6c4-e380-4d80-bcce-5362604213cd")
+	)
 	(label "D[0..31]"
 		(at 48.26 85.09 180)
 		(fields_autoplaced yes)
@@ -241,6 +287,28 @@
 			(justify left bottom)
 		)
 		(uuid "c5e1f29d-8c8d-4a90-a68d-c6eb0bfd3021")
+	)
+	(global_label "~{SYS_RESET}"
+		(shape input)
+		(at 44.45 43.18 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a3ee5ff7-d266-455d-a8a1-bb2ad4c602d8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 44.45 29.8794 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(hierarchical_label "Data[0..31]"
 		(shape output)
@@ -339,7 +407,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "lvds_port.kicad_sch"
+		(property "Sheetfile" "lvds_port_b.kicad_sch"
 			(at 52.07 74.2446 0)
 			(effects
 				(font
@@ -367,6 +435,16 @@
 				(justify left)
 			)
 			(uuid "b6f904fd-cc49-409b-892a-c23978410a3c")
+		)
+		(pin "EN" input
+			(at 52.07 69.85 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a7e75d66-8f5c-45f3-be2b-0f9ab7f37eb9")
 		)
 		(instances
 			(project "LVDS_BeagleVFire_Cape"
@@ -397,7 +475,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "lvds_port.kicad_sch"
+		(property "Sheetfile" "lvds_port_a.kicad_sch"
 			(at 52.07 55.1946 0)
 			(effects
 				(font
@@ -425,6 +503,16 @@
 				(justify left)
 			)
 			(uuid "cc504943-627d-405d-9119-f362b0935d08")
+		)
+		(pin "EN" input
+			(at 52.07 50.8 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6ae0a18a-4cdc-40a3-9e7f-34c75702c704")
 		)
 		(instances
 			(project "LVDS_BeagleVFire_Cape"

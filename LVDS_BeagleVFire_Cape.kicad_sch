@@ -6,8 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "BeagleV Fire TDC Cape")
-		(date "2024-09-28")
-		(rev "1")
+		(date "2025-01-31")
+		(rev "2")
 		(company "MIT SpinQuest DAQ Group")
 		(comment 1 "Noah Paladino")
 	)
@@ -1757,6 +1757,111 @@
 				)
 			)
 		)
+		(symbol "Kria_Board_Parts:LD3007MS_FAN"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LD3007MS_FAN_1_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "Fan-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "Fan+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+1V8"
 			(power)
 			(pin_names
@@ -3227,6 +3332,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 162.56) (xy 48.26 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17a17a3a-cefd-4098-81ba-deb4a5f28ab1")
+	)
+	(wire
+		(pts
 			(xy 82.55 120.65) (xy 125.73 120.65)
 		)
 		(stroke
@@ -3327,6 +3442,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 39.37) (xy 69.85 39.37)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "222e0f56-b605-4f87-bfd9-a2f903438524")
+	)
+	(wire
+		(pts
 			(xy 101.6 67.31) (xy 120.65 67.31)
 		)
 		(stroke
@@ -3344,6 +3469,16 @@
 			(type solid)
 		)
 		(uuid "22e2d0fd-ec43-4ee9-b34d-cc75311a06eb")
+	)
+	(wire
+		(pts
+			(xy 86.36 34.29) (xy 86.36 39.37)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "22f4942c-b2cc-4f4c-8e86-3d126d9ff685")
 	)
 	(wire
 		(pts
@@ -3434,6 +3569,16 @@
 			(type solid)
 		)
 		(uuid "2ab45e31-90b9-4498-baa7-ff60520eafd6")
+	)
+	(wire
+		(pts
+			(xy 53.34 167.64) (xy 48.26 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c5c17e4-ff92-47ec-820c-a55915a79dc0")
 	)
 	(bus
 		(pts
@@ -3864,6 +4009,16 @@
 			(type solid)
 		)
 		(uuid "5dd21dfa-5f9c-4807-aea2-0acd03922e6d")
+	)
+	(wire
+		(pts
+			(xy 48.26 167.64) (xy 48.26 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e6c9fab-92a6-4480-85c9-18cf61b44bc3")
 	)
 	(bus
 		(pts
@@ -4845,6 +5000,16 @@
 		)
 		(uuid "db303965-d3b1-4d01-9053-7303f3de773d")
 	)
+	(wire
+		(pts
+			(xy 53.34 162.56) (xy 48.26 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e06f6f29-670c-42c0-a959-0e622fe036b6")
+	)
 	(bus
 		(pts
 			(xy 80.01 140.97) (xy 80.01 143.51)
@@ -5034,16 +5199,6 @@
 			(type solid)
 		)
 		(uuid "f24187d6-3fc1-4db5-95d1-ead0c78063af")
-	)
-	(wire
-		(pts
-			(xy 69.85 39.37) (xy 88.9 39.37)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "f3850192-d07a-46df-999a-742739f270c9")
 	)
 	(bus
 		(pts
@@ -5422,7 +5577,7 @@
 		(uuid "1e2ed08a-0ee4-4733-9796-867ae7b3d911")
 	)
 	(label "B1_GPIO5P"
-		(at 255.27 106.68 180)
+		(at 255.27 104.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5510,7 +5665,7 @@
 		(uuid "2623c857-4f37-4e38-8aa8-55f9f0811ec4")
 	)
 	(label "B1_GPIO3N"
-		(at 255.27 93.98 180)
+		(at 255.27 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5521,7 +5676,7 @@
 		(uuid "27eff3a0-b18b-4ced-9087-603c77b769d6")
 	)
 	(label "B1_GPIO52N"
-		(at 255.27 83.82 180)
+		(at 255.27 86.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5543,7 +5698,7 @@
 		(uuid "2abf1790-dd19-40a0-aab7-55770fb988a6")
 	)
 	(label "B1_GPIO49P"
-		(at 255.27 71.12 180)
+		(at 255.27 68.58 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5576,7 +5731,7 @@
 		(uuid "2c34f4dc-d970-4a65-a6b5-ec5a943b3a7d")
 	)
 	(label "B1_GPIO37P"
-		(at 255.27 96.52 180)
+		(at 255.27 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5642,7 +5797,7 @@
 		(uuid "36d74bcc-b392-451a-ad9c-b8d5ed39671b")
 	)
 	(label "B1_GPIO36N"
-		(at 255.27 104.14 180)
+		(at 255.27 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5675,7 +5830,7 @@
 		(uuid "3eb91ffb-d9c1-41fe-8461-b3c4c670eac8")
 	)
 	(label "B1_GPIO37N"
-		(at 255.27 88.9 180)
+		(at 255.27 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5719,7 +5874,7 @@
 		(uuid "44597d78-d5e3-466d-bb19-16ffcc602f03")
 	)
 	(label "B1_GPIO3P"
-		(at 255.27 101.6 180)
+		(at 255.27 99.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5851,7 +6006,7 @@
 		(uuid "5647da15-41c2-4bc8-bb37-27c07a502a1d")
 	)
 	(label "B1_GPIO36P"
-		(at 125.73 115.57 180)
+		(at 125.73 118.11 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5871,17 +6026,6 @@
 			(justify left bottom)
 		)
 		(uuid "568a20c7-d220-4b5d-ae1f-a30aa8faef22")
-	)
-	(label "~{SYS_RESET}"
-		(at 88.9 39.37 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "580dd369-bbc3-40eb-abbe-40c533af3730")
 	)
 	(label "D7"
 		(at 234.95 45.72 0)
@@ -5917,7 +6061,7 @@
 		(uuid "5bb7dee4-f4d1-4784-bbfc-fc0584ce55e2")
 	)
 	(label "B0_HSIO34P"
-		(at 125.73 128.27 180)
+		(at 125.73 130.81 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5928,7 +6072,7 @@
 		(uuid "5caee9e1-3c63-4d9c-a915-b492e46d3016")
 	)
 	(label "B1_GPIO53N"
-		(at 255.27 78.74 180)
+		(at 255.27 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5939,7 +6083,7 @@
 		(uuid "5ce3df65-9a5a-4025-9382-8453d425cedf")
 	)
 	(label "B1_GPIO50N"
-		(at 255.27 73.66 180)
+		(at 255.27 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6060,7 +6204,7 @@
 		(uuid "6d6c1119-950a-4c21-9307-f5f2d5e3150e")
 	)
 	(label "B1_GPIO53P"
-		(at 255.27 86.36 180)
+		(at 255.27 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6280,7 +6424,7 @@
 		(uuid "8377f185-ad0f-4d26-8f14-9512801e3b48")
 	)
 	(label "B1_GPIO50P"
-		(at 255.27 81.28 180)
+		(at 255.27 78.74 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6291,7 +6435,7 @@
 		(uuid "84eb456a-e192-4d2e-a9ea-0e0d0633ecce")
 	)
 	(label "B1_GPIO42N"
-		(at 125.73 118.11 180)
+		(at 125.73 115.57 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6566,7 +6710,7 @@
 		(uuid "acdf2f99-8fa6-476b-9c22-4047266d50d5")
 	)
 	(label "B0_HSIO15P"
-		(at 125.73 135.89 180)
+		(at 125.73 133.35 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6665,7 +6809,7 @@
 		(uuid "ba4bb403-5483-481d-96b3-92f8a1c01e90")
 	)
 	(label "B1_GPIO51P"
-		(at 255.27 76.2 180)
+		(at 255.27 73.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6720,7 +6864,7 @@
 		(uuid "c0ba29f0-8eda-4e31-8974-ecc3d7a21160")
 	)
 	(label "B0_HSIO34N"
-		(at 125.73 130.81 180)
+		(at 125.73 128.27 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6797,7 +6941,7 @@
 		(uuid "cd2fb3cf-a59b-4cdd-9cf0-ef34dd80ef99")
 	)
 	(label "B1_GPIO52P"
-		(at 255.27 91.44 180)
+		(at 255.27 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6830,7 +6974,7 @@
 		(uuid "cf442a83-7af6-402c-b47c-f662e9e8a132")
 	)
 	(label "B0_HSIO29P"
-		(at 125.73 133.35 180)
+		(at 125.73 135.89 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6918,7 +7062,7 @@
 		(uuid "d9f45a47-6253-48d7-943c-57deab5aecad")
 	)
 	(label "B1_GPIO51N"
-		(at 255.27 68.58 180)
+		(at 255.27 71.12 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7039,7 +7183,7 @@
 		(uuid "fdb28c1c-2028-42df-8a79-a3da98ff3409")
 	)
 	(label "B1_GPIO5N"
-		(at 255.27 99.06 180)
+		(at 255.27 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7059,6 +7203,28 @@
 			(justify right bottom)
 		)
 		(uuid "ff5e45b9-ddc5-4d59-9e9b-9018477c6536")
+	)
+	(global_label "~{SYS_RESET}"
+		(shape output)
+		(at 86.36 34.29 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0db9b210-be09-4445-8d3c-24d051baaf61")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.36 20.9894 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GNDD")
@@ -7973,6 +8139,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 48.26 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4cf22e6e-7074-48d6-a187-dd83837e65f7")
+		(property "Reference" "#PWR023"
+			(at 48.26 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 48.26 174.244 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bc7eeff0-b53f-4631-bc02-5cd44b00d9df")
+		)
+		(instances
+			(project "LVDS_BeagleVFire_Cape"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x06_Socket")
 		(at 35.56 143.51 0)
 		(mirror y)
@@ -8185,6 +8416,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Kria_Board_Parts:LD3007MS_FAN")
+		(at 58.42 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bdb760fa-127a-4234-bc1f-52f6b35b17bb")
+		(property "Reference" "J9"
+			(at 64.77 164.4649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 64.77 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Kria_Board_Parts:LD3007MS_FAN"
+			(at 58.42 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 58.42 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "487bbe03-9556-46c8-9115-5634cd248f34")
+		)
+		(pin "2"
+			(uuid "f4385bf7-3df5-4739-9639-feb456559f92")
+		)
+		(instances
+			(project ""
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VBUS")
 		(at 46.99 24.13 0)
 		(unit 1)
@@ -8310,6 +8611,70 @@
 			(project "BeagleBone-Black-Cape"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 48.26 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "db46c89d-1aa7-45d4-b7ec-81c27bd5aa87")
+		(property "Reference" "#PWR022"
+			(at 48.26 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 48.641 156.972 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 160.02 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 160.02 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a0978d37-7a3c-4f87-be98-fd585695d7b9")
+		)
+		(instances
+			(project "LVDS_BeagleVFire_Cape"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)

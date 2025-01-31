@@ -4,4 +4,5 @@
   (lib (name "SN65LVDT348D")(type "KiCad")(uri "${KIPRJMOD}/project_libraries/ul_SN65LVDT348D/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "RJHSE508002")(type "KiCad")(uri "${KIPRJMOD}/project_libraries/RJHSE508002")(options "")(descr ""))
   (lib (name "EPL_00_250_NTN")(type "KiCad")(uri "${KIPRJMOD}/project_libraries/EPL_00_250_NTN/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "Kria_Board_Parts")(type "KiCad")(uri "${KIPRJMOD}/project_libraries/Kria_Board_Parts/Kria_Board_Parts.pretty")(options "")(descr ""))
 )
