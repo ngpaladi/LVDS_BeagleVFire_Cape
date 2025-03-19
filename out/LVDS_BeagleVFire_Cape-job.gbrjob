@@ -3,15 +3,15 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "8.0.6"
+      "Version": "9.0.0-9.0.0-2~ubuntu24.04.1"
     },
-    "CreationDate": "2025-01-31T14:28:37-05:00"
+    "CreationDate": "2025-03-19T11:47:18-04:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "LVDS_BeagleVFire_Cape",
       "GUID": "4c564453-5f42-4656-9167-6c6556466972",
-      "Revision": "1"
+      "Revision": "2"
     },
     "Size": {
       "X": 90.12,
@@ -48,12 +48,12 @@
     },
     {
       "Path": "LVDS_BeagleVFire_Cape-In1_Cu.gbr",
-      "FileFunction": "Copper,L2,Inr",
+      "FileFunction": "Copper,L5,Inr",
       "FilePolarity": "Positive"
     },
     {
       "Path": "LVDS_BeagleVFire_Cape-In2_Cu.gbr",
-      "FileFunction": "Copper,L3,Inr",
+      "FileFunction": "Copper,L7,Inr",
       "FilePolarity": "Positive"
     },
     {
@@ -94,6 +94,16 @@
     {
       "Path": "LVDS_BeagleVFire_Cape-Edge_Cuts.gbr",
       "FileFunction": "Profile",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "LVDS_BeagleVFire_Cape-PasteEdge_Cuts.gbr",
+      "FileFunction": "Other,User",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "LVDS_BeagleVFire_Cape-StencilHolder_Cuts.gbr",
+      "FileFunction": "Other,User",
       "FilePolarity": "Positive"
     }
   ],
